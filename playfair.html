@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playfair Cipher</title>
+
+    <link rel="shortcut icon" type="image/jpg" href="assets/favicon/favicon.ico"/>
+
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous"
+/>
+
+    <link rel="stylesheet" href="assets/css/maicons.css">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+  
+    <link rel="stylesheet" href="assets/vendor/animate/animate.css">
+  
+    <link rel="stylesheet" href="assets/css/theme.css">
+
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body>
+
+      <!-- Back to top button -->
+  <div class="back-to-top"></div>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky" data-offset="500">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">Mega<span class="text-primary">Cryption</span></a>
+
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="btn btn-primary ml-lg-2" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          
+          </ul>
+        </div>
+
+
+
+      </div>
+    </nav>
+
+    <div class="container">
+        <div class="page-banner home-banner" id="playfair-padding">
+
+        
+            
+            <div class="algorithm">
+                (6 x 6) Playfair Cipher
+              </div>
+              <div class="radioButton">
+                <p>What do you want to do ?</p><br>
+                <input type="radio" name='encrypt-decrypt' id="encrypt" checked>
+                <label>Encrypt</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name='encrypt-decrypt' id="decrypt">
+                <label>Decrypt</label>
+              </div>
+              <div class="validCharacters">
+                <p>Text:- A-Z,a-z,0-9 and spaces are valid characters</p>
+                <p>Key:- A-Z,a-z,0-9 and spaces are valid characters</p>
+              </div>
+              <div class="input" style="height: 100px">
+                <label id="inputLabel">Enter the Original Text: </label>
+                <input type="text" placeholder="Text Value" id='inputText' class="inputText" autocomplete="off"> <br><br>
+                <label id="keyLabel">Enter the Key: </label>
+                <input type="text" placeholder="Key Value" id='key' class="inputText" autocomplete="off"> <br><br>
+                <div class="run">
+                  <button onclick="calculate()" class="btn btn-primary ml-lg-2" id="runButton">Encrypt</button>
+                </div>
+              </div>
+            
+              <div class="programOutput">
+                <span class="output"></span>
+                <span class="copyAnswer"></span>
+              </div>
+              <div class="programVisualize">
+                <div class="visualizeTitle"></div>
+                <span class="visualization"></span>
+                <span class="copyVisualization"></span>
+              </div>
+            
+              
+        </div>
+      </div>
+    </header>
+
+    <script src="assets/js/playfair.js"></script>
+
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+<script src="assets/js/google-maps.js"></script>
+
+<script src="assets/vendor/wow/wow.min.js"></script>
+
+<script src="assets/js/theme.js"></script>
+  
+    
+</body>
+</html>
